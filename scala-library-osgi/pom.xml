@@ -36,7 +36,7 @@
                         <Bundle-Name>${project.name} - ${project.version}</Bundle-Name>
                         <Bundle-Version>${project.version}</Bundle-Version>
                         <Export-Package>
-                            scala.*
+                            *;-split-package:=merge-first
                         </Export-Package>
                     </instructions>
                 </configuration>
