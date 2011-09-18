@@ -1,3 +1,1 @@
-För att köra denna bundle i ett OSGi-ramverk, installera:
-* http://scala-tools.org/repo-releases/org/scala-lang-osgi/scala-library/2.7.7/scala-library-2.7.7.jar
-(eller annan scala-bundle, lätt att fixa själv genom att lägga till metadata)
+
