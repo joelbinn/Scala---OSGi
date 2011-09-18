@@ -118,7 +118,9 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Bundle-Activator>se.joelbinnquist.scala.scalaosgitest.Activator</Bundle-Activator>
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+                        <Bundle-Name>${project.name}</Bundle-Name>
+                        <Bundle-Version>${project.version}</Bundle-Version>
                         <Private-Package>
                             se.joelbinnquist.*
                         </Private-Package>
@@ -126,9 +128,10 @@
                             org.osgi.*;version="[1.0,2.0)",
                             scala.*;version="[2.8,3.0)"
                         </Import-Package>
-                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-                        <Bundle-Name>${project.name}</Bundle-Name>
-                        <Bundle-Version>${project.version}</Bundle-Version>
+                        <Service-Component>
+                            se.joelbinnquist.scala.scalaosgitest.Hello;
+                            immediate:=true
+                        </Service-Component>
                     </instructions>
                 </configuration>
             </plugin>
