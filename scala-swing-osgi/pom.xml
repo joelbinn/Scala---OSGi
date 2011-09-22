@@ -12,7 +12,7 @@
     <artifactId>scala-swing-osgi</artifactId>
     <version>${scala.version}</version>
     <packaging>bundle</packaging>
-    <name>Scala library bundle for OSGi</name>
+    <name>Scala Swing bundle for OSGi</name>
 
 
     <dependencies>
