@@ -30,8 +30,14 @@
         </dependency>
 
         <dependency>
-            <groupId>se.joelbinnquist.osgi.scala</groupId>
-            <artifactId>scala-library-osgi</artifactId>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>${scala.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-swing</artifactId>
             <version>${scala.version}</version>
             <scope>provided</scope>
         </dependency>
