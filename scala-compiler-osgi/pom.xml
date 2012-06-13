@@ -10,15 +10,15 @@
     </properties>
 
     <groupId>se.joelbinnquist.osgi.scala</groupId>
-    <artifactId>scala-library-osgi</artifactId>
+    <artifactId>scala-compiler-osgi</artifactId>
     <version>${scala.version}</version>
     <packaging>bundle</packaging>
-    <name>Scala library bundle for OSGi</name>
+    <name>Scala compiler bundle for OSGi</name>
 
     <dependencies>
         <dependency>
             <groupId>org.scala-lang</groupId>
-            <artifactId>scala-library</artifactId>
+            <artifactId>scala-compiler</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
