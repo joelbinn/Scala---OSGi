@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <properties>
+        <scala.version>2.9.2</scala.version>
+        <encoding>UTF-8</encoding>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+
+    <groupId>se.joelbinnquist.osgi.scala</groupId>
+    <artifactId>Scala--OSGi</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Scala for OSGi</name>
+
+    <modules>
+        <module>scala-compiler-osgi</module>
+        <module>scala-library-osgi</module>
+        <module>scala-osgi-test</module>
+        <module>scala-swing-osgi</module>
+        <module>upnp-gui</module>
+    </modules>
+</project>
