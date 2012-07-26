@@ -34,10 +34,10 @@
                 <configuration>
                     <instructions>
                         <Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
-                        <Bundle-Name>${project.name} - ${project.version}</Bundle-Name>
-                        <Bundle-Version>${project.version}</Bundle-Version>
+                        <Bundle-Name>${project.name} - ${scala.osgi.version}</Bundle-Name>
+                        <Bundle-Version>${scala.osgi.version}</Bundle-Version>
                         <Export-Package>
-                            *;-split-package:=merge-first
+                            *;version="${scala.osgi.version}";-split-package:=merge-first
                         </Export-Package>
                     </instructions>
                 </configuration>

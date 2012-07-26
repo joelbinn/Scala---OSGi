@@ -6,6 +6,8 @@
 
     <properties>
         <scala.version>2.9.2</scala.version>
+        <scala.osgi.version>${scala.version}</scala.osgi.version>
+        <akka.version>2.0.2</akka.version>
         <encoding>UTF-8</encoding>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
@@ -23,5 +25,6 @@
         <module>scala-osgi-test</module>
         <module>scala-swing-osgi</module>
         <module>upnp-gui</module>
+        <module>akka-osgi-support</module>
     </modules>
 </project>

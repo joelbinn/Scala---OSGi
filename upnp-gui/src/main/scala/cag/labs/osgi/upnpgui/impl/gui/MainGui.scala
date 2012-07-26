@@ -10,15 +10,15 @@ import scala.swing.event.WindowClosing
  */
 
 class MainGui extends Frame {
-    title = "Hello, World!"
-    contents = new Button {
-        text = "Click Me!"
-    }
+  title = "Hello, World!"
+  contents = new Button {
+    text = "Click Me!"
+  }
 
-    listenTo(this)
+  listenTo(this)
 
-    reactions += {
-        case wc: WindowClosing => println("closing window")
-    }
+  reactions += {
+    case wc: WindowClosing => println("closing window")
+  }
 
 }
