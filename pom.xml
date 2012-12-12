@@ -26,4 +26,51 @@
         <module>scala-swing-osgi</module>
         <module>upnp-gui</module>
     </modules>
+
+	<!-- ================================================ -->
+    <!--            Repository Configuration              -->
+    <!-- ================================================ -->
+
+    <repositories>
+        <repository>
+            <id>joels-nexus</id>
+            <name>Joels Nexus</name>
+            <snapshots/>
+            <releases/>
+            <url>http://gollum:8190/nexus/content/groups/public/</url>
+        </repository>
+
+        <!-- Flytta till Nexus -->
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>joels-nexus</id>
+            <name>Joels Nexus</name>
+            <snapshots/>
+            <releases/>
+            <url>http://gollum:8190/nexus/content/groups/public/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <distributionManagement>
+        <repository>
+            <id>joels-nexus</id>
+            <url>scp://gollum:/mnt/stordisk/nexus/storage/releases</url>
+            <name>Joels Releases</name>
+            <layout>default</layout>
+        </repository>
+        <snapshotRepository>
+            <id>joels-nexus</id>
+            <url>scp://gollum:/mnt/stordisk/nexus/storage/snapshots</url>
+            <name>Joels Snapshots</name>
+            <layout>default</layout>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <scm>
+        <connection>scm:git:git@github.com:joelbinn/Scala---OSGi.git</connection>
+        <url>scm:git:git@github.com:joelbinn/Scala---OSGi.git</url>
+        <developerConnection>scm:git:git@github.com:joelbinn/Scala---OSGi.git</developerConnection>
+    </scm>
 </project>
