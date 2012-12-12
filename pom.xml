@@ -25,6 +25,5 @@
         <module>scala-osgi-test</module>
         <module>scala-swing-osgi</module>
         <module>upnp-gui</module>
-        <module>akka-osgi-support</module>
     </modules>
 </project>
